@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diamonds Dataset Analysis">
+    <title>Efficient Path Finding and Visualization</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Efficient Path Finding and Visualization</h1>
+    </header>
+
+    <section>
+        <p>This project involves finding the shortest path for efficient US city map navigation, optimizing route calculations and reducing processing time.</p>
+        <p><b>US City Map Navigation System</b></p>
+
+        <h2>Overview</h2>
+        <p>This Java-based project implements a city navigation system using advanced graph algorithms to optimize route calculations for US cities. The project is structured across five milestones, gradually incorporating key algorithms and features to improve the efficiency of city map navigation.</p>
+
+        <h2>Milestones</h2>
+
+        <h3>Milestone 1: Load Data Program (LDP)</h3>
+        <p>The first step of the project focuses on loading the city data into the system. The data includes city names, distances between cities, and other relevant information required to construct the graph used in subsequent algorithms.</p>
+
+        <h3>Milestone 2: Adjacency Matrix and City Finder</h3>
+        <p>This milestone introduces two critical components:</p>
+        <ul>
+            <li><b>Adjacency Matrix:</b> A visual representation of the connections between cities, where each row and column corresponds to a city, and the matrix values represent distances between them.</li>
+            <li><b>CityFinder:</b> This component is responsible for calculating and displaying the optimal path between a specified source and destination city, leveraging the adjacency matrix to retrieve route information.</li>
+        </ul>
+
+        <h3>Milestone 3: Minimum Spanning Tree with Animations</h3>
+        <p>In this phase, <b>Prim’s Minimum Spanning Tree (MST)</b> algorithm is integrated to find the least costly connections between cities. Visual enhancements are added using animation libraries, providing an interactive view of the MST generation process.</p>
+
+        <p><b>Libraries used:</b></p>
+        <ul>
+            <li>javax.swing.*</li>
+            <li>java.awt</li>
+            <li>java.io</li>
+            <li>java.util</li>
+            <li>javax.imageio.*</li>
+        </ul>
+
+        <h3>Milestone 4: Bellman-Ford Algorithm and City Attributes</h3>
+        <p>The system now supports the <b>Bellman-Ford Algorithm</b>, which accounts for city-specific attributes such as:</p>
+        <ul>
+            <li><b>Weather:</b> Weather conditions that might affect travel times.</li>
+            <li><b>Distance:</b> The physical distance between cities.</li>
+            <li><b>Gallons Required:</b> The amount of fuel needed for the journey.</li>
+            <li><b>Latitude & Longitude:</b> Geographical coordinates used to calculate distances and display cities on the map.</li>
+        </ul>
+
+        <h3>Milestone 5: Dijkstra's Algorithm</h3>
+        <p>The final milestone integrates Dijkstra's Shortest Path Algorithm, allowing for efficient and precise route calculations between cities, ensuring users receive the optimal navigation routes based on distance.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><b>Efficient Route Calculations:</b> Implementation of Prim's MST, Bellman-Ford, and Dijkstra's algorithms for optimal pathfinding.</li>
+            <li><b>Graphical User Interface:</b> A user-friendly GUI developed using `javax.swing` and `java.awt` for visualizing the city map and routes.</li>
+            <li><b>Animation for Clarity:</b> Dynamic visualization of the algorithms through custom animations, enhancing the user's understanding of how routes are computed.</li>
+            <li><b>City Attributes:</b> Weather conditions, fuel consumption, and geographical data integrated into route calculations.</li>
+        </ul>
+
+        <h2>Technologies Used</h2>
+        <p><b>Languages:</b> Java</p>
+        <p><b>Algorithms:</b> Prim’s MST, Bellman-Ford, Dijkstra’s Shortest Path</p>
+        <p><b>Libraries:</b></p>
+        <ul>
+            <li>javax.swing.* for GUI development</li>
+            <li>java.awt for graphical components and animations</li>
+            <li>java.io for file handling</li>
+            <li>java.util for data structures and algorithms</li>
+            <li>javax.imageio.* for image handling</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <h3>Prerequisites</h3>
+        <ul>
+            <li>Java Development Kit (JDK) 8 or above</li>
+            <li>IDE with Java support (e.g., IntelliJ IDEA, Eclipse)</li>
+        </ul>
+
+        <h3>Running the Project</h3>
+        <ul>
+            <li>Clone the repository:</li>
+            <pre>
+                <code>git clone https://github.com/Gowtham-Pentela/Algo_Course.git</code>
+            </pre>
+            <li>Open the project in your Java IDE.</li>
+            <li>Compile and run the `Main.java` file to launch the GUI for city map navigation.</li>
+        </ul>
+
+        <h2>Usage</h2>
+        <ul>
+            <li><b>Load City Data:</b> Use the LDP (Load Data Program) to input city data, including distances and attributes.</li>
+            <li><b>View Adjacency Matrix:</b> Visualize the connections between cities and the distances using the adjacency matrix.</li>
+            <li><b>Find Shortest Path:</b> Utilize the CityFinder feature to calculate the optimal route between two cities.</li>
+            <li><b>Visualize MST:</b> See the minimum spanning tree generated using Prim's MST with animated graphics.</li>
+            <li><b>City Attributes:</b> Explore the effects of weather, fuel consumption, and other factors on the selected routes.</li>
+        </ul>
+
+        <h2>Future Improvements</h2>
+        <ul>
+            <li><b>Enhanced Visuals:</b> Upgrade the map visualizations with satellite views and additional 3D elements.</li>
+            <li><b>Mobile Application:</b> Adapt the system for mobile platforms, allowing users to navigate on the go.</li>
+        </ul>
+
+        <h2>Contributors</h2>
+        <ul>
+            <li><a href="https://github.com/Gowtham-Pentela">Gowtham Pentela</a></li>
+            <li><a href="https://github.com/Iftequar14">Iftequar32</a></li>
+        </ul>
+
+        <a href="https://github.com/Gowtham-Pentela/Algo_Course" target="_blank">View Source Code on GitHub</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gowtham Pentela. All rights reserved.</p>
+    </footer>
+</body>
+</html>
