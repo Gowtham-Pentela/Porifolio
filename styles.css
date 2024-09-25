@@ -42,12 +42,31 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.about-container {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
 .profile-pic {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
+    width: 150px; 
+    height: auto; 
     border-radius: 50%;
+}
+
+.about-text {
+    max-width: 600px; 
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .profile-pic {
+        margin-bottom: 20px; 
+    }
 }
 
 .project {
@@ -57,6 +76,31 @@ section {
 a {
     color: #007BFF;
     text-decoration: none;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+
+.contact-logo {
+    width: 28px; 
+    height: 28px; 
+    vertical-align: middle; 
+}
+
+.contact-item a {
+    text-decoration: none; 
+    color: #000; 
+    font-size: 15%; 
+    line-height: 15%; 
+
 }
 
 a:hover {
