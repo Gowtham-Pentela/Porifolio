@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Diamonds Data Analysis">
-    <title>Project 1: Diamonds Data Analysis</title>
+    <title>Diamonds Data Analysis</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -14,69 +14,93 @@
 
     <section>
         <p>This R script performs data cleaning, manipulation, and visualization on the diamonds dataset from the ggplot2 package. 
-        The dataset contains various attributes of diamonds (like price, carat, cut, etc.), and this script showcases how to clean, filter, summarize, and visualize the data. Additionally, it exports the cleaned data and summary statistics into CSV files.<br>
-        <b>Diamonds Data Analysis</b><br>
-        <b>Description</b><br>
-        This R script performs data cleaning, manipulation, and visualization on the diamonds dataset from the ggplot2 package. The dataset contains various attributes of diamonds (like price, carat, cut, etc.), and this script showcases how to clean, filter, summarize, and visualize the data. Additionally, it exports the cleaned data and summary statistics into CSV files.
-        <br>
-        <b>Requirements</b><br>
-        <b>R Version</b><br>
-        The script requires R and works with versions that support the following packages.<br>
-        The program is run in jupyter, change the Runtime type to R.<br>
-        <b>Packages Used</b><br>
-        <b>tidyverse:</b> A collection of R packages for data manipulation, visualization, and more.<br>
-        <b>janitor:</b> Used for cleaning and standardizing column names in the dataset.<br>
-        If any of the required packages are not installed, the script will install them automatically.
+        The dataset contains various attributes of diamonds (like price, carat, cut, etc.), and this script showcases how to clean, filter, summarize, and visualize the data. Additionally, it exports the cleaned data and summary statistics into CSV files.</p>
+
+        <h2>Description</h2>
+        <p>This R script performs data cleaning, manipulation, and visualization on the diamonds dataset from the ggplot2 package. The dataset contains various attributes of diamonds (like price, carat, cut, etc.), and this script showcases how to clean, filter, summarize, and visualize the data. Additionally, it exports the cleaned data and summary statistics into CSV files.</p>
         
-        Dataset
-        Dataset used: diamonds from the ggplot2 package.
-        Columns: Includes attributes such as carat, cut, color, clarity, depth, table, price, and more.
-        Source: Preloaded with the ggplot2 package.
-        Script Overview
+        <h2>Requirements</h2>
+        <h3>R Version</h3>
+        <p>The script requires R and works with versions that support the following packages. The program is run in Jupyter; change the Runtime type to R.</p>
+        
+        <h3>Packages Used</h3>
         <ul>
-            <li><b>Data Cleaning</b><br>
-        <b>Duplicate Removal:</b> Any duplicate rows in the dataset are removed using the distinct() function.<br>
-        <b>Column Name Cleaning:</b> The clean_names() function from the janitor package is used to standardize column names.<br>
-        <b>Missing Value Check:</b> The script checks for missing values across the dataset and summarizes their count.<br></li>
-        <li><b>Data Manipulation</b><br>
-        <b>Filtering:</b> The dataset is filtered to include only diamonds priced above $5,000.<br>
-        <b>Grouping and Summarization:</b> The diamonds are grouped by the cut variable, and the script calculates:<br>
-        Average price of diamonds per cut.<br>
-        Total carat weight per cut.<br>
-        </li>
-        <li><b>Data Visualization</b><br>
-            The script generates the following visualizations:<br>
-            
-            <b>Bar Plot:</b> Total carat weight per diamond cut.<br>
-            <b>Scatter Plot:</b> Price vs. carat for diamonds priced over $5,000.<br>
-            <b>Histogram:</b> Distribution of diamond prices for diamonds priced over $5,000.</li>
-        <li><b>Data Export</b><br>
-            <b>Cleaned Data:</b> The cleaned and processed dataset is saved as cleaned_diamonds.csv.<br>
-            <b>Summary Data:</b> Summary statistics (average price and total carat per cut) are saved as summary_price_by_cut.csv.<br>
-            Instructions for Use<br>
-            <b>Run the Script:</b><br>
-            
-            Open the R console or RStudio.<br>
-            Ensure the necessary packages are installed (tidyverse, janitor).<br>
-            Run the script provided.<br>
-            <b>View Output:</b><br>
-            
-            Cleaned and summarized data will be saved in the working directory as CSV files (cleaned_diamonds.csv and summary_price_by_cut.csv).<br>
-            Visualizations will be displayed in the R plotting window.<br>
-            <b>Modify the Script:</b><br>
-            
-            You can adjust filtering conditions (e.g., changing the price threshold) or modify the grouping for different summary statistics.<br>
-            <b>Files Generated:</b><br>
-            <li>
-            <b>cleaned_diamonds.csv:</b> The cleaned version of the diamonds dataset.<br></li>
-            <li><b>summary_price_by_cut.csv:</b> Summary statistics for diamond prices and total carat grouped by the cut.<br></li>
-            <b>Example Output</b><br>
-            <li><b>Bar Plot:</b> Total Carat Weight per Cut <br></li>
-            <li><b>Scatter Plot:</b> Price vs. Carat for Diamonds Priced Over $5,000 <br></li>
-            <li><b>Histogram:</b>Distribution of Diamond Prices</li>
+            <li><b>tidyverse:</b> A collection of R packages for data manipulation, visualization, and more.</li>
+            <li><b>janitor:</b> Used for cleaning and standardizing column names in the dataset.</li>
+        </ul>
+        <p>If any of the required packages are not installed, the script will install them automatically.</p>
+        
+        <h3>Dataset</h3>
+        <p><b>Dataset used:</b> Diamonds from the ggplot2 package.</p>
+        <p><b>Columns:</b> Includes attributes such as carat, cut, color, clarity, depth, table, price, and more.</p>
+        <p><b>Source:</b> Preloaded with the ggplot2 package.</p>
+        
+        <h2>Script Overview</h2>
+
+        <h3>Data Cleaning</h3>
+        <ul>
+            <li><b>Duplicate Removal:</b> Any duplicate rows in the dataset are removed using the distinct() function.</li>
+            <li><b>Column Name Cleaning:</b> The clean_names() function from the janitor package is used to standardize column names.</li>
+            <li><b>Missing Value Check:</b> The script checks for missing values across the dataset and summarizes their count.</li>
+        </ul>
+
+        <h3>Data Manipulation</h3>
+        <ul>
+            <li><b>Filtering:</b> The dataset is filtered to include only diamonds priced above $5,000.</li>
+            <li><b>Grouping and Summarization:</b> The diamonds are grouped by the cut variable, and the script calculates:
+                <ul>
+                    <li>Average price of diamonds per cut.</li>
+                    <li>Total carat weight per cut.</li>
+                </ul>
             </li>
         </ul>
-    </p>
+
+        <h3>Data Visualization</h3>
+        <p>The script generates the following visualizations:</p>
+        <ul>
+            <li><b>Bar Plot:</b> Total carat weight per diamond cut.</li>
+            <li><b>Scatter Plot:</b> Price vs. carat for diamonds priced over $5,000.</li>
+            <li><b>Histogram:</b> Distribution of diamond prices for diamonds priced over $5,000.</li>
+        </ul>
+
+        <h3>Data Export</h3>
+        <ul>
+            <li><b>Cleaned Data:</b> The cleaned and processed dataset is saved as cleaned_diamonds.csv.</li>
+            <li><b>Summary Data:</b> Summary statistics (average price and total carat per cut) are saved as summary_price_by_cut.csv.</li>
+        </ul>
+
+        <h2>Instructions for Use</h2>
+        <h3>Run the Script</h3>
+        <p>
+            <ul>
+                <li>Open the R console or RStudio.</li>
+                <li>Ensure the necessary packages are installed (tidyverse, janitor).</li>
+                <li>Run the script provided.</li>
+            </ul>
+        </p>
+
+        <h3>View Output</h3>
+        <ul>
+            <li>Cleaned and summarized data will be saved in the working directory as CSV files (cleaned_diamonds.csv and summary_price_by_cut.csv).</li>
+            <li>Visualizations will be displayed in the R plotting window.</li>
+        </ul>
+
+        <h3>Modify the Script</h3>
+        <p>You can adjust filtering conditions (e.g., changing the price threshold) or modify the grouping for different summary statistics.</p>
+
+        <h3>Files Generated</h3>
+        <ul>
+            <li><b>cleaned_diamonds.csv:</b> The cleaned version of the diamonds dataset.</li>
+            <li><b>summary_price_by_cut.csv:</b> Summary statistics for diamond prices and total carat grouped by the cut.</li>
+        </ul>
+
+        <h2>Example Output</h2>
+        <ul>
+            <li><b>Bar Plot:</b> Total Carat Weight per Cut</li>
+            <li><b>Scatter Plot:</b> Price vs. Carat for Diamonds Priced Over $5,000</li>
+            <li><b>Histogram:</b> Distribution of Diamond Prices</li>
+        </ul>
+
         <a href="https://github.com/Gowtham-Pentela/R/tree/main/Diamonds" target="_blank">View Source Code on GitHub</a>
     </section>
 
