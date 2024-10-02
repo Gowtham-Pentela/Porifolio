@@ -2,200 +2,443 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gowtham Pentela - Portfolio">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <title>Gowtham Pentela| Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="keywords" content="Gowtham Pentela, portfolio, Gowtham, Python Developer, Application Developer, Machine Learning Enthusiast, Data Analyst" />
+    <meta name="description" content="Welcome to Gowtham's Portfolio. Data Enthusiast" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <title>Gowtham Pentela</title>
 </head>
-<body>
-    <header>
-        <h1>Gowtham Pentela</h1>
-        <nav>
+<body oncontextmenu="return false">
+
+<header>
+        <a href="/" class="logo"><i class="fa-regular fa-s"></i> Gowtham Pentela</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
-    <section id="details">
-        <div class="about-container">
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-            <div class ="about-text">
-                <h2>Gowtham Pentela</h2><br>
-                <p>Research Assistant (Machine Learning)</p>
-                <p>Center for Innovation through Visualization and Simulation
-                    <a href="https://www.pnw.edu/civs/" target="_blank">
-                        <span>(CIVS)</span></a></p>
-                <p>Purdue University Northwest
-                    <a href="https://www.pnw.edu/" target="_blank">
-                        <span>(PNW)</span></a></p>
-                <p> gowthampentela@outlook.com
-                    <a href="mailto:gowthampentela@outlook.com" target="_blank">
-                    
-                    <span>(click here)</span>
-                </a></p>
-                <p> Linkedin
-                    <a href="https://www.linkedin.com/in/gowtham-pentela/" target="_blank">
-                    
-                    <span>(click here)</span>
-                </a></p>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm Gowtham <span>Pentela</span></h2>
+    <p>I am into <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/gowtham-pentela/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/Gowtham-Pentela" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+</div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Gowtham Pentela</h3>
+        <span class="tag">Graduate Student</span>
+        
+        <p>I am an Experienced Associate Application Developer with a demonstrated history of working in the information technology and services industry,
+          skilled in Python (Programming Language), R, SQL, Machine Learning, Java, MATLAB, HTML, CSS, Bootstrap and Object-Oriented Programming (OOPS) and a
+          strong engineering professional, currently pursuing Masters Degree in Computer science from Purdue Northwest. </p>
+        
+        <div class="box-container">
+            <div class="box">
+              <p><span> email : </span> gowthampentela@outlook.com</p>
+              <p><span> phone : </span> +1(219)-264-8814</p>
+              <p><span> place : </span> Hammond, Indiana. 46323</p>
             </div>
         </div>
+        
+        <div class="resumebtn">
+            <a href="assets/images/educat/resume.pdf" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
 
-    </section>
-    <section id="about">
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<!-- <section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+          <div class="row" id="skillsContainer">
+
+      </div>
+</div>
+</section> -->
+<section class="skills" id="skills">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+  <div class="container">
+      <div class="skills-grid">
+          <div class="skill">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" />
+              <span>Python</span>
+          </div>
+          <div class="skill">
+              <img src="https://www.r-project.org/logo/Rlogo.png" alt="R" />
+              <span>R</span>
+          </div>
+          <div class="skill">
+            <img src="assets/images/educat/logos/mysql.png" alt="My SQL" />
+            <span>My SQL</span>
+        </div>
+          <div class="skill">
+              <img src="assets/images/educat/logos/Matlab.png" alt="MATLAB" />
+              <span>MATLAB</span>
+          </div>
+          <div class="skill">
+              <img src="assets/images/educat/logos/data analytics.webp" alt="Data Analysis" />
+              <span>Data Analysis</span>
+          </div>
+          <div class="skill">
+            <img src="assets/images/educat/logos/machinelearning.jpeg" alt="Machine Learning" />
+            <span>Machine Learning</span>
+        </div>
+        <div class="skill">
+          <img src="assets/images/educat/logos/html-5.png" alt="HTML5" />
+          <span>HTML5</span>
+      </div>
+      <div class="skill">
+        <img src="assets/images/educat/logos/css3.png" alt="CSS3" />
+        <span>CSS3</span>
+    </div>
+          <div class="skill">
+              <img src="assets/images/educat/logos/Tableau.png" alt="Tableau" />
+              <span>Tableau</span>
+          </div>
+          <div class="skill">
+              <img src="assets/images/educat/logos/powerbi.png" alt="Power BI" />
+              <span>Power BI</span>
+          </div>
+          <div class="skill">
+              <img src="https://code.visualstudio.com/assets/favicon.ico" alt="VS Code" />
+              <span>VS Code</span>
+          </div>
+          <div class="skill">
+            <img src="assets/images/educat/logos/deeplearning.png" alt="Deep Learning" />
+            <span>Deep Learning</span>
+        </div>
+        <div class="skill">
+          <img src="assets/images/educat/logos/git_version.png" alt="Git Version" />
+          <span>Git VCS</span>
+      </div>
+      <div class="skill">
+        <img src="assets/images/educat/logos/GitHub.png" alt="Git hub" />
+        <span>GitHub</span>
+    </div>
+          <div class="skill">
+              <img src="assets/images/educat/logos/bitbucket.png" alt="Bitbucket" />
+              <span>Bitbucket</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- skills section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/educat/Purdue.png" alt="">
+      </div>
+      <div class="content">
+      <h3>Master of Science | Computer Science</h3>
+      <p>Purdue University Northwest| Hammond, Indiana </p>
+      <h4>2023-2024 | Final Semester</h4>
+      </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/BIHER.png" alt="">
+        </div>
+        <div class="content">
+        <h3>Bachelor of Technology</h3>
+        <p>BIHER | Chennai, India</p>
+        <h4>2017-2021 | Completed</h4>
+        </div>
+    </div>
+
+
+</div>
+</section>
+<!-- education section ends -->
+
+
+<section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Projects </h2>
+
+  <div class="timeline">
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2><a href="https://github.com/Gowtham-Pentela/Sign-Language-Recognition" class="btn"><span>Sign Language Recognition</span></h2>
+        </div>
+        <div class="desc">
+            <h3>Created a CNN model to predict the signs based on images | Tools: Python, Deep Learning </h3>
+            <p>Sep 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2><a href="https://github.com/Gowtham-Pentela/R/tree/main/Diamonds" class="btn"><span>Data Analysis</span></h2>
+        </div>
+        <div class="desc">
+            <h3>Performed comprehensive analysis of the diamonds dataset | Tools: R</h3>
+            <p>Aug 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2><a href="https://github.com/Gowtham-Pentela/Algo_Course" class="btn"><span>Efficient Path Finding and Visualization</span></h2>
+        </div>
+        <div class="desc">
+            <h3> Found shortest path to cities in USA using Algorithms| Tools: Java, Algorithms</h3>
+            <p>Aug 2023 - Sep 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="viewall" style="text-align: center; margin-top: 50px;">
+  <a href="https://github.com/Gowtham-Pentela?tab=repositories" class="btn" style="
+    display: inline-block;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 50px;
+  ">
+    <span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+</section>
+<!-- work project section ends -->
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+  <div class="timeline">
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Purdue University (CIVS)</h2>
+        </div>
+        <div class="desc">
+            <h3>Research Assistant (Machine Learning) | Part-Time</h3>
+            <p>May 2023 - present</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>Accenture</h2>
+        </div>
+        <div class="desc">
+            <h3>Application Development Associate | Full-Time</h3>
+            <p>Aug 2021 - Dec 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Sutherland</h2>
+        </div>
+        <div class="desc">
+            <h3> Associate IT Helpdesk| Internship</h3>
+            <p>Aug 2019 - Sep 2019</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+<!-- experience section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
       
-                <h2>About Me</h2>
-                <p>Hello, I'm Gowtham Pentela, a dedicated data professional with over 2 years of experience in machine learning, data manipulation, and data cleaning. My expertise lies in transforming raw data into actionable insights and building predictive models that help solve real-world problems. Alongside this, I’ve gained 1.5 years of experience as an Application Development Associate, working with mainframe technologies to maintain and enhance enterprise-level applications.</p>
-    
-                <p>With a passion for continuous learning, I’m always looking to explore new tools and technologies to further my knowledge and improve my craft. Whether it's tackling complex data challenges or developing robust applications, I’m driven by a desire to deliver effective solutions.</p>
-         
-        
-    </section>
-    <section id="projects">
-        <h2>Current Projects</h2>
-        <div class="project">
-            <h3>
-                Sign Language Detection
-            </h3>
-            <p><b>Idea:</b>This project involves creation of a deep learning model that detects sign language and converts it into normal text.
-            <br>
-            <li><b>Libraries:</b> OpenCV, TensorFlow, Keras</li>
-            <li><b>Dataset:</b> Sign Language MNIST on Kaggle </li>
-            <li><b>Expected Results:</b>Using the webcam of device this project should be able to detect the signs and produce the texts the signs represent.</li>
-        </p>
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
         </div>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project"></div>
-            <h3>Sign Language Recognition</h3>
-            <p>This project focuses on developing a Convolutional Neural Network (CNN) to recognize American Sign Language (ASL) letters from images. Using a dataset of 28x28 grayscale images, the model is trained to identify 24 unique hand gestures (letters A-Z, excluding J and Z due to their dynamic nature). The network employs layers such as Conv2D, MaxPooling, and Dropout for feature extraction and classification. With techniques like data augmentation and learning rate scheduling, the model achieves an impressive 99.023% accuracy on the test set. 
-                This project aims to contribute to accessibility and communication through sign language recognition.</p>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
 
-                <li>Key Features: Data Preprocessing, CNN Model, Data Augmentation,Model Optimization,Model Evaluation & Visualization.</li>
-                <li>Tech Stack: Python,numpy, pandas, matplotlib, seaborn, visualkeras, scikit-learn, tensorflow, ImageDataGenerator. <a href="projects/Sign Language Recognition.html">View more</a></li></p>
-        </div>
-        <div class="project">
-            <h3>Diamond Data Analysis (R)</h3>
-            <p>This project involves a comprehensive analysis of the diamonds dataset, using R’s data manipulation, visualization, and statistical functions. The analysis includes data cleaning, summary statistics, and visualizations like bar plots, scatter plots, and histograms.
 
-                <li>Key Features: Data cleaning, summary statistics, visualization (bar plots, scatter plots, histograms).</li>
-                <li>Tech Stack: ggplot2, dplyr, tidyverse, janitor. <a href="projects/Diamonds Data Analysis.html">View more</a></li></p>
-        </div>
-        <div class="project">
-            <h3>Efficient Path Finding and Visualization</h3>
-            <p>This project involves finding the shortest path for efficient US city map navigation, optimizing route calculations and reducing processing time.
-                <li>Key Features: Algorithms, Visualization (GUI)</li>
-                <li>Tech Stack: Prim's, Dijkstra </li><a href="projects/US City Map Navigation System.html">View more</a></p>
-        </div>
-        <div class="project">
-            <h3>Road Crack Detection</h3>
-            <p>This project involves finding the number of cracks present on the road, by using the images of the road by using deep learning architectures.
-                <li>Key Features: Deep Learning Algorithms, Visualization (GUI)</li>
-                <li>Tech Stack: VGG16, RPN, ROI </li><a href="projects/Road Crack Detection.html">View more</a></p>
-        </div>
-        
-    </section>
+<!-- footer section starts -->
+<section class="footer">
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="job">
-            <h3>Reseach Assistant | Machine Learning</h3>
-            <p>Purdue University (CIVS)| May 2023 – Present</p>
-            <ul>
-                <li>Conducted research on Integrated Virtual Blast Furnace to identify critical parameters such as Deadman
-                    plugging, Thermal Index, and Missing Thermocouples in a Blast Furnace, analyzing data from over 400+
-                    sensors.</li>
-                <li>Implemented various Machine Learning Algorithms, achieving an accuracy of 98.4% in predictions,
-                    ensuring efficient predictions.</li>
-                <li> Analyzed sensor data from the Blast Furnace for over 12 years to identify furnace conditions, including
-                    early detection of Deadman plugging with an accuracy of 98%.</li>
-                <li> Utilized Plotly to build interactive dashboards for real-time monitoring and analysis of the Thermal Index
-                    and other metrics.</li>
-                <li>Mentored a team of 3 peers, while collaborating with Research Engineers and Scientists to enhance
-                    research methods.</li>
-            </ul>
-        </div>
-        <div class="job"></div>
-            <h3>Application Development Associate | Mainframe</h3>
-            <p>Accenture |Client: CICA(CHUBB)| Aug 2021 – Dec 2022</p>
-            <ul>
-                <li>Designed, built, tested, assembled, and configured 10+ applications based on specific business
-                    requirements, reducing deployment time by 30%.</li>
-                <li> Developed, designed, and maintained technologies for 5+ clients, improving operational efficiency by
-                    25% through tailored solutions.</li>
-                <li>  Consistently delivered high-quality code within project timelines, completing 100% of projects on
-                    schedule, and participated in 20+ code reviews to ensure code quality and adherence to best practices.
-                    </li>
-            </ul>
-        </div>
-        <div class="job"></div>
-            <h3>Associate IT Helpdesk (Intern) | Customer Service</h3>
-            <p>Sutherland |Client: AT&T| Aug 2019 – Sep 2021</p>
-            <ul>
-                <li>Provided technical assistance to clients, maintaining a 95% customer satisfaction rate through effective
-                    communication and relationship management.</li>
-                <li> Resolved 100+ support tickets within defined SLAs and assisted teammates in resolving 20% of their
-                    tickets, improving overall team efficiency.</li>
-            </ul>
-        </div>
-    </section>
+  <div class="box-container">
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><b>Languages:</b> Python, R, Java, C#, MATLAB, JCL, ADSO, IDMS, COBOL</li>
-            <li><b>Web Technologies:</b> HTML, CSS</li>
-            <li><b>Database Systems:</b> SQL, PostgreSQL</li>
-            <li><b>Visualization Tools:</b> Tableau, Power BI, Excel</li>
-            <li><b>Software:</b> MS Office, Excel</li>
-            <li><b>IDE:</b> VS Code, Visual Studio, Notepad, Jupyter</li>
-            <li><b>Analytics:</b> Data Analysis, Data Analytics, Data Visualization, Data Modelling, Data Preprocessing</li>
-            <li><b>Version Control Tools:</b> Git, Bitbucket</li>
-            <li><b>Libraries:</b> Scikit-learn, TensorFlow, PyTorch, Keras, OpenCV, scikit-image, NumPy, Pandas, Matplotlib, Seaborn</li>
-            <li><b>Deep Learning Architectures:</b> CNNs, RNNs, LSTMs</li>
-        </ul>
-    </section>
-    
+      <div class="box">
+          <h3>Gowtham's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
 
-    <section id="education">
-        <h2>Master's Education</h2>
-        <p>Masters in Computer Science, Purdue University Northwest (2023-2024) </p>
-        <li><b>CGPA:</b> 3.67/4.00</li>
-        <li><b>Courses:</b>  Algorithms, Operating Systems, Programming Languages and Interpreters, Deep
-            Learning, Data Mining and Machine Learning, Software Design</li>
-        <h2>Bachelor's Education</h2>
-            <p>BTECH in Computer Science and Engineering, BIHER (2017-2021) </p>
-            <li><b>Grade:</b> 83.2%</li>
-            <li><b>Courses:</b> Data Structures, Algorithms, Database Systems, C, C++, Java, SQL, System Software</li>
-    </section>
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#projects"><i class="fas fa-chevron-circle-right"></i> projects</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <a href="mailto:gowthampentela@outlook.com" target="_blank">
-                <img src="https://img.icons8.com/fluency/48/microsoft-outlook-2019.png" alt="Email Logo" width="30" height="30">
-                <span>gowthampentela@outlook.com</span>
-            </a>
-            <a href="https://www.linkedin.com/in/gowtham-pentela/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" width="30" height="30">
-                <span>Gowtham Pentela</span>
-            </a>
-            <a href="https://github.com/Gowtham-Pentela" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" width="30" height="30">
-                <span>Gowtham Pentela</span>
-            </a>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 Gowtham Pentela. All rights reserved.</p>
-    </footer>
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+1(219)-264-8814</p>
+          <p> <i class="fas fa-envelope"></i>gowthampentela@outlook.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Hammond, Indiana - 46323</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/gowtham-pentela/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/Gowtham-Pentela" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:gowthampentela@outlook.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/gowtham-pentela/"> Gowtham Pentela</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
 </body>
 </html>
