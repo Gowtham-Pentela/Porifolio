@@ -4,10 +4,10 @@ Welcome to my portfolio! Below are the key projects I've worked on, showcasing m
 
 ## Projects
 
-### 1. [Sign Language Recognition](https://github.com/Gowtham-Pentela/Sign-Language-Recognition)
-- **Description**: Developed a Convolutional Neural Network (CNN) model to predict American Sign Language (ASL) signs from images. This project involved data preprocessing, model training, and evaluation, achieving an accuracy of 99.023%.
-- **Technologies Used**: Python, Keras, TensorFlow, Deep Learning
-- **Timeline**: September 2024
+### 1. [ASL Sign Language Detection](https://github.com/Gowtham-Pentela/ASL-Sign-Language-Detection)
+- **Description**: Detected ASL signs using Machine Learning and Computer Vision
+- **Technologies Used**: Python, Machine Learning, Computer Vision
+- **Timeline**: September 2024 - October 2024
 
 ### 2. [Diamonds Data Analysis](https://github.com/Gowtham-Pentela/R/tree/main/Diamonds)
 - **Description**: Conducted a comprehensive analysis of the diamonds dataset. The project focused on data manipulation, visualization, and statistical analysis to derive insights into diamond pricing and characteristics.
